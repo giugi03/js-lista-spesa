@@ -28,7 +28,7 @@ Questo ciclo `for` è utilizzato per attraversare l'array, aggiungendo ogni elem
 
 Ecco un'anteprima del layout della lista della spesa:
 
-![Screenshot del progetto](./screen.png)
+![Screenshot del progetto](screen.png)
 
 ---
 
