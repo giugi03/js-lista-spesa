@@ -1,0 +1,107 @@
+/* Reset default margins and padding */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(135deg, #f06, #f9a8d4);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Permette alla pagina di crescere oltre lo schermo */
+    padding: 20px;
+}
+
+/* Title styling */
+h1 {
+    font-family: 'Bangers', cursive; /
+    font-size: 3rem;
+    color: #ffeb3b;
+    text-shadow: 3px 3px #e91e63;
+    margin-bottom: 20px;
+    animation: bounceIn 1s ease-out;
+}
+
+/* Container for the list */
+#listaSpesaContainer {
+    background-color: #ffeb3b;
+    border-radius: 20px;
+    padding: 20px;
+    width: 300px;
+    max-height: 60vh; /* Imposta un'altezza massima per il contenitore della lista */
+    overflow-y: auto; /* Aggiunge lo scrolling quando la lista è troppo lunga */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    animation: scaleUp 1s ease-in-out;
+}
+
+/* Unordered list styling */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Each item in the list */
+li {
+    font-size: 1.5rem;
+    color: #fff;
+    background: #f50057;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease-out;
+}
+
+/* Hover effect on list items */
+li:hover {
+    transform: translateY(-5px) rotate(-2deg);
+    background-color: #ff4081;
+}
+
+/* Keyframes for title bounce-in */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for list scaling effect */
+@keyframes scaleUp {
+    0% {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Keyframes for fading in the list items */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
